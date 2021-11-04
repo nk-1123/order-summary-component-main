@@ -15,7 +15,7 @@ p{
     text-align: center;
 }
 .container{
-    min-height: 100vh;/*viewport height*/
+    height: fit-content;/*viewport height*/
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -23,6 +23,7 @@ p{
     justify-content: center;
 
 }
+/* style for background */
 .bg {
  background-image: url(/images/pattern-background-desktop.svg);
  background-repeat: no-repeat;
@@ -30,6 +31,10 @@ p{
  background-position: top center ;
 
 }
+/* end of style for background */
+
+
+/* hero section */
 
  .bg #hero{
     background-image: url(/images/illustration-hero.svg);
@@ -37,75 +42,127 @@ p{
     background-size: cover;
     width: 375px;
     height: 200px;
-    margin-top: 55px;
+    margin-top: 40px;
     border-radius: 20px 20px 0px 0px;
     justify-content: center;
     align-items: center;
     
 
 }
+
+/* end of hero section  */
+
+/* main section */
+
 #main{
     width: 375px;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     background-color: rgb(226, 217, 217);
     border-radius: 0px 0px 20px 20px;
     
-
+    
 }
 
 #main h1{
-    font-size: 22px;
+    font-size: 20px;
     margin:  0px 15px;
-    padding-top: 35px;
+    padding-top: 20px;
     font-weight: 900;
     color: hsl(224, 46%, 19%);
     
 }
 #main p{
     color: hsl(224, 23%, 55%);
-    padding: 15px;
-    padding-top: 10px ;   
+    padding: 14px;
+    padding-top: 10px ;  
+    font-weight: 500; 
 }
 .plan{
     font-size: 10px;
-    height: 50px;
+    height: 60px;
     flex-direction: row;
-    padding: 15px;
+    padding: 10px;
     margin: 0px;
-    width: 80%;
-    background-color: thistle;
+    width: 85%;
+    background-color: rgb(187, 171, 187);
     border-radius: 20px;
-    overflow: auto;
+
     
 }
-.img{
-    height: 50px;
-    width: 50px;
+img{
+    height: 40px;
+    width: 40px;
 }
 
 
 
-#main .cta{
-    display: inline-block;
-    padding: 10px 30px;
-    color: red;
-    border: 2px solid red;
+
+#main .plan .cta{
+    text-decoration: underline;
     border-radius: 10px;
     background-color: transparent;
     font-size: 2res;
-    text-transform: uppercase;
     letter-spacing: .1res;
-    margin-top: 30px;
     transition: .3s ease background-color;
     transition-property: background-color, color;
+    padding-left: 20px;
+} 
+#main .plan .cta:hover{
+    color: rgb(99, 101, 134);
+    background-color: transparent;
+    text-decoration: none;
 }
-#main .cta:hover{
+
+#main .Payment .cta{
+    border-radius: 15px;
+    margin: 20px;
+    background-color: blue;
     color: white;
-    background-color: red;
-
+    width: 85%;
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 2res;
+    letter-spacing: .1res;
+    transition: .3s ease background-color;
+    transition-property: background-color, color;
+    
+} 
+#main .Payment .cta:hover{
+    color: rgb(99, 101, 134);
+    background-color: rgb(155, 150, 202);
+    
 }
 
-#box{
-    height: 70vh;
+
+#main .cancel .cta{
+    margin-bottom: 10px;
+    margin-top: 0px;
+    color: hsl(224, 46%, 19%);
+    width: 85%;
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 2res;
+    letter-spacing: .1res;
+    transition: .3s ease background-color;
+    transition-property: background-color, color;
+    
+} 
+#main .cancel .cta:hover{
+    color: rgb(104, 106, 136);
+    background-color: transparent;
+    
 }
+
+#copyright{
+    display: flexbox;
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+/* end of main section */
+
+/* keyframes */
