@@ -25,7 +25,7 @@ p{
 }
 /* style for background */
 .bg {
- background-image: url(/images/pattern-background-desktop.svg);
+ background-image: url(images/pattern-background-desktop.svg);
  background-repeat: no-repeat;
  background-size: contain;
  background-position: top center ;
@@ -37,7 +37,7 @@ p{
 /* hero section */
 
  .bg #hero{
-    background-image: url(/images/illustration-hero.svg);
+    background-image: url(images/illustration-hero.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 375px;
